@@ -1,5 +1,6 @@
 package io.github.challenge.uolhostbackend.models;
 
+import io.github.challenge.uolhostbackend.dtos.PlayerDTO;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -28,5 +29,14 @@ public class Player {
   private String phoneNumber;
 
   private GroupType grouptType;
+
+  public Player(PlayerDTO playerDTO) {
+    this.name = playerDTO.name();
+    this.email = playerDTO.email();
+    this.phoneNumber = playerDTO.phoneNumber();
+    this.grouptType = playerDTO.groupType();
+  }
+
+
 
 }
