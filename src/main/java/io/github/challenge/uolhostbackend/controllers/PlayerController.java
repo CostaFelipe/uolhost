@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import io.github.challenge.uolhostbackend.dtos.PlayerDTO;
+import io.github.challenge.uolhostbackend.models.GroupType;
 import io.github.challenge.uolhostbackend.models.Player;
 import io.github.challenge.uolhostbackend.services.PlayerService;
 

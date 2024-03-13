@@ -37,4 +37,6 @@ public class Player {
     this.grouptType = playerDTO.groupType();
   }
 
+  public Player(){}
+
 }
