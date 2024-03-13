@@ -26,6 +26,8 @@ public class Player {
   @NotBlank
   private String email;
 
+  private String codeName;
+
   private String phoneNumber;
 
   private GroupType grouptType;
@@ -33,6 +35,7 @@ public class Player {
   public Player(PlayerDTO playerDTO) {
     this.name = playerDTO.name();
     this.email = playerDTO.email();
+    this.codeName = playerDTO.codeName();
     this.phoneNumber = playerDTO.phoneNumber();
     this.grouptType = playerDTO.groupType();
   }
